@@ -15,7 +15,8 @@ function Hero() {
           le web design et l'intégration dans Unreal Engine. Je vous invite à explorer 
           un aperçu de mes projets, de mes compétences, et de mon univers visuel.
         </p>
-        <Button>TÉLÉCHARGER MON CV</Button>
+        <Button href="/CV-GNAMIEN-BI.pdf">TÉLÉCHARGER MON CV</Button>
+        
       </div>
       <div className="mx-auto h-0.5 w-full bg-black"></div>
     </section>

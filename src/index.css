@@ -2,3 +2,12 @@
 @plugin "daisyui" {
   /* themes: abyss; */
 };
+
+@theme {
+  --color-primary: #3B82F6;
+  --color-secondary: #10B981;
+  --color-accent: #F59E0B;
+  --color-gray: #DBD7D2;
+  --color-dark: #1F2937;
+  --color-light: #F9FAFB;
+}

@@ -1,9 +1,9 @@
 
-function Button({children}) {
+function Button({children, href}) {
   return (
-    <button className="px-6 py-3 border-2 border-black hover:bg-black hover:text-white transition">
+    <a href={href} target="_blank" className="px-6 py-3 border-2 border-black hover:bg-black hover:text-white transition">
       {children}
-    </button>
+    </a>
   )
 }
 

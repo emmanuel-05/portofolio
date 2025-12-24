@@ -1,10 +1,10 @@
-function CompetenceCard({ icon, title, description, tags }) {
+function CompetenceCard({ icon: Icon, title, description, tags }) {
   return (
     <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition">
       {/* Icône en losange */}
       <div className="flex justify-center mb-4">
-        <div className="w-16 h-16 bg-white border-2 border-gray-200 rotate-45 flex items-center justify-center">
-          <span className="text-2xl -rotate-45">{icon}</span>
+        <div className="w-18 h-18 bg-white border-2 border-red-400 rotate-45 flex items-center justify-center">
+          <span className="text-2xl -rotate-45"><Icon  className="text-black hover:text-red-400"/></span>
         </div>
       </div>
       
