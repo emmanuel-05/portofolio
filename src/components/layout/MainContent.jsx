@@ -3,12 +3,16 @@ import CompetenceCard from '../ui/CompetenceCard'
 import { competences } from '../../data/competences'
 import Hero from "../sections/Hero"
 
-function MainContent() {
+function MainContent({ isOpen, onClose }) {
   return (
-    <main className="ml-[300px] flex-1 min-h-screen bg-gray-50 p-8 overflow-y-auto">
-        <div className="max-w-6xl mx-auto">
+    
+      <main className={`
+      ${isOpen ? 'ml-[300px]' : 'ml-0'} flex-1 min-h-screen bg-red-50 p-8 overflow-y-auto`}
+      >
+      <div className="max-w-6xl mx-auto">
+   
+    
         <Hero />
-
         <div className="inline-block mb-10">
             <h2 className="text-2xl font-bold">Domaines de compétences</h2>
             <div className="h-1 w-full bg-red-500 mt-2"></div>
@@ -26,11 +30,6 @@ function MainContent() {
             />
             ))}
         </div>
-
-      {/* Plus tard tu ajouteras d'autres sections */}
-      {/* <Design /> */}
-      {/* <Projects /> */}
-
       </div>
     </main>
   )

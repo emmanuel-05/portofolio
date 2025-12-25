@@ -4,11 +4,24 @@ import { MapPinHouse } from 'lucide-react';
 import { Linkedin  } from 'lucide-react';
 
 
-function Sidebar() {
+function Sidebar({ isOpen, onClose }) {
   return (
-    <aside className="w-[300px] fixed h-screen p-6">
+    <aside className={`
+        w-[300px] bg-white fixed h-screen p-6 border-r border-gray-200
+        transition-transform duration-300 ease-in-out z-40
+        ${isOpen ? 'translate-x-0' : '-translate-x-full'}
+      `}>
       {/* <aside className="w-[300px] fixed h-screen p-6"> */}
       {/* En-tête Menu */}
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 text-gray-500 hover:text-black transition"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
       {/* <div className="mb-8">
         <h2 className="text-2xl font-bold">Menu</h2>
         <div className="h-1 w-12 bg-red-500 mt-2"></div>
